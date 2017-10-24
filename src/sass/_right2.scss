@@ -1,0 +1,34 @@
+#right2 {
+    display: none;
+    .footer_right {
+        button {
+            float: right;
+            background-color: #5fb188;
+            &:first-child {
+                color: white;
+                padding: 0px 15px 12px;
+                &:after {
+                    content: "\f105";
+                    font-family: fontAwesome;
+                    font-size: 32px;
+                    position: relative;
+                    top: 6px;
+                    margin-left: 8px;
+                }
+            }
+            &:nth-child(2) {
+                background-color: #cacaca;
+                margin-right: 8px;
+                padding: 0px 15px 12px;
+                &:before {
+                    content: "\f104";
+                    font-family: fontAwesome;
+                    font-size: 32px;
+                    position: relative;
+                    top: 6px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

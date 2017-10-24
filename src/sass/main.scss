@@ -1,0 +1,29 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #5ab085;
+    // background-color:#6fb78f;
+    background-image: url("../image/b-copy.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@import 'header';
+@import 'left';
+@import 'commonRight';
+.container{
+    width: 843px;
+    min-height: 900px;
+    box-sizing:border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+} 
+div{
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+}
+
+*{
+    outline: none;
+}

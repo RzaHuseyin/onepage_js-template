@@ -1,0 +1,85 @@
+#left {
+    width: 30%;
+    height: 584px;
+    text-align: center;
+    background-color: #373737;
+    float: left;
+    .header_left {
+        margin-top: 32px;
+        margin-bottom: 5.7em;
+        div {
+            width: 38px;
+            height: 38px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            display: inline-block;
+            color: white;
+            box-sizing: border-box;
+            padding-top: 5px;
+            cursor: pointer;
+            span {
+                font-size: 20px;
+                font-style: bold;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+        .activePageButton {
+            color: #5eb087;
+            border-color: #5eb087;
+        }
+    }
+    .images {
+        >div {
+            height: 89px;
+        }
+    }
+    .slide {
+        padding: 0 27px;
+        .slide_body {
+            .slide_item {
+                color: white;
+                h4 {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .slide_button {
+            >div {
+                width: 10px;
+                height: 10px;
+                margin: 0 4px;
+                display: inline-block;
+                background-color: #607f6c;
+                border-radius: 50%;
+                border: 1px solid transparent;
+                cursor: pointer;
+                &:hover {
+                    background-color: #5eb087;
+                }
+            }
+            .activeSlide {
+                margin-top: 2px;
+                background-color: #5eb087;
+                border: 1px solid #5eb087;
+            }
+        }
+    }
+    .footer_left {
+        margin-top: 4.2em;
+        span {
+            font-size: 12px;
+            font-weight: 300;
+            color: white;
+            cursor: pointer;
+            &:hover {
+                color: #868686;
+            }
+        }
+    }
+}

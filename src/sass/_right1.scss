@@ -1,0 +1,28 @@
+#right1 {
+    .footer_right {
+        button {
+            &:first-child {
+                padding: 10px 17px 14px;
+                &:before {
+                    content: "\f002";
+                    font-family: fontAwesome;
+                    font-size: 21px;
+                    position: relative;
+                    top: 2px;
+                    margin-right: 8px;
+                }
+            }
+            &:last-child {
+                padding: 0px 15px 12px;
+                &:after {
+                    content: "\f105";
+                    font-family: fontAwesome;
+                    font-size: 32px;
+                    position: relative;
+                    top: 6px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

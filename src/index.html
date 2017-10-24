@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section id="header">
+            <h2>Hörmətli, Tural Əhmədov</h2>
+            <p>Şirkət haqqında məlumat yerləşdirməyiniz gələcəkdə işinizi rahatlaşdıracaq. Bu sizin cəmi 3 dəqiqənizi alacaq.</p>
+        </section>
+        <section id="left">
+            <div class="header_left">
+                <div class="pageButon activePageButton"> <span>1</span></div>
+                <div class="pageButon"> <span>2</span></div>
+                <div class="pageButon"> <span>3</span></div>
+            </div>
+            <div class="images">
+                <div><img id="logo" src="image/layers1.svg" alt="image"></div>
+            </div>
+            <div class="slide">
+                <div class="slide_body">
+                    <div class="slide_item item2">
+                        <h4 id="headerSlider">Şirkət strukturu</h4>
+                        <p id="textSlider"> Şirkət strukturu dummy text of the printing typesetting industry. Lorem Ipsum hasbeen the industry
+                            standard dummy text ever 1500s, when unknown access to admin. </p>
+                    </div>
+                </div>
+                <div class="slide_button">
+                    <div class="activeSlide"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="footer_left">
+                <span>Cari pencərəni bağla</span>
+            </div>
+        </section>
+        <!-- end left section -->
+        <section id="right1" class="right right1">
+            <div class="header_right">
+                <h1>Şirkət strukturu</h1>
+            </div>
+            <div class="person">
+                <div class="addList">
+                    <div>
+                        <span>Bölmənin adı <i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+                    </div>
+                    <div>
+                        <input id="newDep" type="text" value="İnsan resursları şöbəsi">
+                        <button id="js_addButtonDep">Əlavə et</button>
+                    </div>
+                </div>
+                <div class="personList">
+                    <table id="tableDepartment">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Texniki təhcizat şöbəsi">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Marketing şöbəsi">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Satış və marketing şöbəsi">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="footer_right">
+                <button> Vizual baxış</button>
+                <button id="right1Next"> Növbəti addım </button>
+            </div>
+        </section>
+        <!-- end right1 section -->
+        <section id="right2" class="right right2">
+            <div class="header_right">
+                <h1>Əməkdaşlar</h1>
+            </div>
+            <div class="person">
+                <div class="addList">
+                    <div>
+                        <span>Əməkdaşın adı və soyadı</span>
+                    </div>
+                    <div>
+                        <input id="newPerson" type="text">
+                        <button id="js_addButton">Əlavə et</button>
+                    </div>
+                </div>
+                <div class="personList">
+                    <table id="tablePerson">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Anar Məmmədov">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Mətanət Əliskəndərova">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <input class="js_editInput" readonly value="Əli Quliyev">
+                                <i class="js_editButton fa fa-pencil"></i>
+                                <i class="js_deleteButton fa fa-trash-o"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="footer_right">
+                <button id="right2Next"> Növbəti addım </button>
+                <button id="right2Prev"> Əvvəlki addım </button>
+            </div>
+        </section>
+        <!-- end right2 section-->
+        <!-- start right3 section -->
+        <section id="right3" class="right right3">
+            <div class="header_right">
+                <h1>İş rejimi</h1>
+            </div>
+            <!-- datapiker div -->
+            <div class="timepiker">
+                <div>
+                    <span class="iconSpan">İş saatları <i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <span class="iconSpan">Nahar fasiləsi <i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+                    <span class="iconSpan">İş saatı </span>
+                </div>
+                <div>
+                    <p>B.e.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput active" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput active" type="time" value="09:00">
+                        <span class="spanText">Nahar fasilə yoxdur</span>
+                        <div class="workTime">56</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>Ç.a.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square fa-window-close" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput" type="time" value="09:00">
+                        <span class="spanText active">Nahar fasilə yoxdur</span>
+                        <div class="workTime">57</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>Ç.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square fa-window-close" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput" type="time" value="09:00">
+                        <span class="spanText active">Nahar fasilə yoxdur</span>
+                        <div class="workTime">82</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>C.a</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput active" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput active" type="time" value="09:00">
+                        <span class="spanText">Nahar fasilə yoxdur</span>
+                        <div class="workTime">36</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>C.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput active" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput active" type="time" value="09:00">
+                        <span class="spanText">Nahar fasilə yoxdur</span>
+                        <div class="workTime">57</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>Ş.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput active" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput active" type="time" value="09:00">
+                        <span class="spanText">Nahar fasilə yoxdur</span>
+                        <div class="workTime">57</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+                <div>
+                    <p>B.</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="timeInput">
+                        <input class="time_input borderLeft" type="time" value="09:00">
+                        <input class="time_input borderRight" type="time" value="09:00">
+                        <i class="fa js_icon fa-check-square" aria-hidden="true"></i>
+                        <input class="time_input borderLeft js_changeInput active" type="time" value="09:00">
+                        <input class="time_input borderRight js_changeInput active" type="time" value="09:00">
+                        <span class="spanText">Nahar fasilə yoxdur</span>
+                        <div class="workTime">57</div>
+                    </div>
+                    <span class="spanText">İstirahət günü</span>
+                </div>
+            </div>
+            <!-- end tatapiker div -->
+            <div class="footer_right">
+                <button> Ümumi iş saatları</button>
+                <button> İşə başla </button>
+                <button id="right3Prev"> Əvvəlki addım </button>
+            </div>
+        </section>
+        <!-- end right3 section -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
